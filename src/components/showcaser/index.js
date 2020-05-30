@@ -10,7 +10,7 @@ export class Showcaser extends Component {
     };
   }
 
-  startTimer = () => {
+  startCounter = () => {
     this.timerIndex = setInterval(() => {
       if (this.state.counter === 10000) {
         this.endTimer();
@@ -20,7 +20,7 @@ export class Showcaser extends Component {
     }, 0);
   };
 
-  endTimer = () => {
+  endCounter = () => {
     if (this.timerIndex !== -1) {
       clearInterval(this.timerIndex);
       this.timerIndex = -1;
@@ -36,8 +36,8 @@ export class Showcaser extends Component {
     this.setState({ ...this.state, ...{ withAno: !this.state.withAno } });
   };
 
-  showMeLog = (event, index) => {
-    console.log("mindless", event, index, new Date().getTime());
+  showMeLog = (event) => {
+    console.log("mindless", event, new Date().getTime());
   };
 
   withoutANO = () => {
@@ -238,194 +238,194 @@ export class Showcaser extends Component {
   withANO = () => {
     return (
       <>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
-        <button onClick={(event) => this.showMeLog(event, 2)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
+        <button onClick={(event) => this.showMeLog(event)}>Noop</button>
       </>
     );
   };
@@ -435,8 +435,8 @@ export class Showcaser extends Component {
       <div>
         <p>Counter : {this.state.counter}</p>
         <p>withANO : {this.state.withAno.toString()}</p>
-        <button onClick={this.startTimer}>Start Timer </button>
-        <button onClick={this.endTimer}>End Timer </button>
+        <button onClick={this.startCounter}>Start Counter </button>
+        <button onClick={this.endCounter}>End Counter </button>
         <button onClick={this.resetCounter}>Reset Counter </button>
         <button onClick={this.toggleAno}>Toggle ano </button>
         <hr />
