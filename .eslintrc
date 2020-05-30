@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "standard",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["react", "standard"],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "device": "readonly",
+    "element": "readonly",
+    "it": "readonly",
+    "by": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "jest/valid-expect": 0,
+    "max-len": ["warn", { "code": 120 }],
+    "no-return-await": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "16.2"
+    }
+  }
+}
